@@ -4,6 +4,8 @@ FROM grafana/grafana-oss:11.3.0
 ## CONFIGURATION
 ##################################################################
 
+ENV GRAFANA_ACCESS_POLICY_TOKEN=000000000
+
 ## Set Grafana options
 ENV GF_ENABLE_GZIP=true
 ENV GF_USERS_DEFAULT_THEME=light
